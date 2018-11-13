@@ -18,7 +18,7 @@
     <div data-options="region:'center'" style="background:#eee;">
         <div class="easyui-tabs" fit="true" border="false" id="tabs">
             <div title="首页" data-options="iconCls:'fa fa-home'">
-                <div align="center" style="padding-top: 100px"><font color="red" size="10">欢迎使用</font></div>
+                <iframe frameborder=0 scrolling="auto" style="width:100%;height:100%" src="${blog}/admin/welcome.jsp"></iframe>
             </div>
         </div>
     </div>
@@ -47,7 +47,8 @@
             text: '博客类别管理',
             iconCls: 'fa fa-tags fa-fw',
             children: [{
-                text: '博客类别信息管理'
+                text: '博客类别信息管理',
+                url: 'blogtypeInfo.jsp'
             }]
         }, {
             text: '评论管理',
