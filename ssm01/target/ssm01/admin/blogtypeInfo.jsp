@@ -12,10 +12,42 @@
 </head>
 <body>
 
-    <table id="dg"></table>
+    <table id="datagrid"></table>
+
+    <div id="dialog">
 
     <script type="text/javascript">
-        $('#dg').datagrid({
+        // 定义全局变量，用于CRUD操作方法
+        var url;
+
+        function openAddDialog() {
+            $('#dialog').dialog('open').dialog('setTitle', '添加博客分类信息');
+            // url值为BlogTypeController中添加操作的RequestMapping
+            url = "${blog}/blogAdmin/blogType/";
+        }
+
+        function openEditDialog() {
+            $('#dialog').dialog('open').dialog('setTitle', '编辑博客分类信息');
+        }
+
+        var toolbar = [{
+            iconCls: 'icon-add',
+            handler: function () {
+                openAddDialog();
+            }
+        }, {
+            iconCls: 'icon-edit',
+            handler: function () {
+                openEditDialog();
+            }
+        }, {
+            iconCls: 'icon-remove',
+            handler: function () {
+                openDeleteDialog();
+            }
+        }];
+
+        $('#datagrid').datagrid({
             fit: true,
             columns: [[{
                 field: 'checkbox',
@@ -37,7 +69,10 @@
                 width: 100,
                 align: 'center'
             }]],
+            toolbar: toolbar,
             pagination: true,
+            pageSize: 10,
+            pageList: [5, 10, 20]
         });
     </script>
 </body>

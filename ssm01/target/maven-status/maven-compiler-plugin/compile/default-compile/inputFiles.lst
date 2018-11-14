@@ -1,8 +1,10 @@
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\dao\BloggerDao.java
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\entity\PageBean.java
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\util\ResponseUtil.java
+G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\controller\admin\BlogTypeController.java
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\entity\Blogger.java
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\service\BlogTypeService.java
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\entity\BlogType.java
+G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\service\Blogger.java
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\controller\AdminController.java
 G:\GitHub\Local Repository\ssm\ssm01\src\main\java\ssm\blog\dao\BlogTypeDao.java

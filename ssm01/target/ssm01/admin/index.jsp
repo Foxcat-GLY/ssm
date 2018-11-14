@@ -10,7 +10,8 @@
     </style>
 </head>
 <body class="easyui-layout">
-    <div region="north" style="height: 78px; background-color: #E0ECFF">
+    <div region="north" style="height: 72px; background-color: #CDCDCD">
+        <h2>SSM</h2>
     </div>
     <div region="west" style="width: 200px" title="导航菜单" split="true">
         <div id="sm"></div>

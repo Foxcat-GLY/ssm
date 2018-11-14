@@ -3,10 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:content="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!-- 扫描所有ssm.blog.controller包下面的所有controller -->
     <context:component-scan base-package="ssm.blog.controller"/>
+    <content:component-scan base-package="ssm.blog.service" />
 
     <!-- 开启注解配置-->
     <mvc:annotation-driven/>

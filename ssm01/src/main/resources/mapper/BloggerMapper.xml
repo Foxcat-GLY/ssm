@@ -28,6 +28,6 @@
         <include refid="BloggerColumns"/>
         from
         <include refid="table_name"/>
-        where id = 2
+        where 1 = 1
     </select>
 </mapper>
